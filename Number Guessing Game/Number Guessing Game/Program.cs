@@ -11,8 +11,8 @@ namespace Number_Guessing_Game
         {
             string Input;
             int guess, low = 0, high = 100;
-           // Random random = new Random();
-           // int randomnumber = random.Next(0, 100);
+            //Random random = new Random();
+            //int randomnumber = random.Next(0, 100);
 
 
 
@@ -23,19 +23,19 @@ namespace Number_Guessing_Game
                 Console.WriteLine("Higher? Lower? Correct?");
                 Input = Console.ReadLine();
 
-                if (Input == "Lower" || Input == "L" || Input == "l")
+                if (Input == "Lower" || Input == "L" || Input == "l" || Input == "lower")
                 {
                     high = guess - 1;
                     //Console.WriteLine("{0}", randomnumber);
                 }
 
-                if (Input == "Higher" || Input == "H" || Input == "h")
+                if (Input == "Higher" || Input == "H" || Input == "h" || Input == "higher")
                 {
                     low = guess + 1;
                     //Console.WriteLine("{0}", randomnumber);
                 }
 
-                if (Input == "Correct" || Input == "C" || Input == "c")
+                if (Input == "Correct" || Input == "C" || Input == "c" || Input == "correct")
                 {
                     Console.WriteLine("Yay I won!");
                     break;
@@ -44,3 +44,6 @@ namespace Number_Guessing_Game
         }
     }
 }
+
+
+
